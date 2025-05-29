@@ -6,10 +6,12 @@ on:
       - main
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: "pages"
@@ -19,6 +21,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Enable GitHub Pages
+        uses: actions/configure-pages@v4
+        with:
+          enablement: true
+          
       - name: Checkout
         uses: actions/checkout@v4
 
