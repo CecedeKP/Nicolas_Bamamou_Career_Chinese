@@ -57,7 +57,7 @@ const ProjectDetail = () => {
             <CardContent className="flex items-center gap-4 p-6">
               <CalendarDays className="h-6 w-6" />
               <div>
-                <h3 className="font-semibold">Start Date</h3>
+                <h3 className="font-semibold">开始日期 / Start Date</h3>
                 <p>{project.startDate}</p>
               </div>
             </CardContent>
@@ -67,7 +67,7 @@ const ProjectDetail = () => {
             <CardContent className="flex items-center gap-4 p-6">
               <Clock className="h-6 w-6" />
               <div>
-                <h3 className="font-semibold">Duration</h3>
+                <h3 className="font-semibold">持续时间 / Duration</h3>
                 <p>{project.duration}</p>
               </div>
             </CardContent>
@@ -77,7 +77,7 @@ const ProjectDetail = () => {
             <CardContent className="flex items-center gap-4 p-6">
               <Target className="h-6 w-6" />
               <div>
-                <h3 className="font-semibold">Project Scope</h3>
+                <h3 className="font-semibold">项目范围 / Project Scope</h3>
                 <p>{project.scope}</p>
               </div>
             </CardContent>
@@ -87,7 +87,7 @@ const ProjectDetail = () => {
             <CardContent className="flex items-center gap-4 p-6">
               <User className="h-6 w-6" />
               <div>
-                <h3 className="font-semibold">Role</h3>
+                <h3 className="font-semibold">职责 /Role</h3>
                 <p>{project.role}</p>
               </div>
             </CardContent>
@@ -96,10 +96,10 @@ const ProjectDetail = () => {
 
         {/* Project Description */}
         <div className="prose max-w-none mb-8">
-          <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
+          <h2 className="text-2xl font-bold mb-4">项目概述 / Project Overview</h2>
           <p className="mb-6">{project.fullDescription}</p>
           
-          <h2 className="text-2xl font-bold mb-4">Key Responsibilities</h2>
+          <h2 className="text-2xl font-bold mb-4">主要职责 / Key Responsibilities</h2>
           <ul className="space-y-2">
             {project.responsibilities.map((item, index) => (
               <li key={index} className="flex items-start gap-2">
@@ -111,7 +111,7 @@ const ProjectDetail = () => {
 
           {project.outcomes && (
             <>
-              <h2 className="text-2xl font-bold mb-4 mt-6">Project Outcomes</h2>
+              <h2 className="text-2xl font-bold mb-4 mt-6">项目成果 / Project Outcomes</h2>
               <ul className="space-y-2">
                 {project.outcomes.map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
@@ -124,7 +124,7 @@ const ProjectDetail = () => {
           )}
            {project.technologies && (
             <>
-              <h2 className="text-2xl font-bold mb-4 mt-6">Technologies Used</h2>
+              <h2 className="text-2xl font-bold mb-4 mt-6">所采用的技术 Technologies Used</h2>
               <ul className="space-y-2">
                 {project.technologies.map((item, index) => (
                   <li key={index} className="flex items-start gap-2">
@@ -137,7 +137,7 @@ const ProjectDetail = () => {
           )}
             {project.links && (
             <div className="mt-8">
-              <h3 className="text-lg font-semibold mb-4">Project Resources</h3>
+              <h3 className="text-lg font-semibold mb-4">项目资源 / Project Resources</h3>
               <div className="flex flex-wrap gap-4">
                 {project.links.map((link, index) => (
                   <a
