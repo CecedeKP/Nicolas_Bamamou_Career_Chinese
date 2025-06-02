@@ -10,26 +10,26 @@ const Education = () => {
   
   const formalEducation = [
     {
-      degree: "电气工程硕士学位 ~ M.S. in Electrical Engineering",
-      institution: " Beijing Jiaotong University's Institute of Renewable Energy",
+      degree: "电气工程硕士学位",
+      institution: " 北京交通大学可再生能源研究院",
       institutionUrl: "https://en.bjtu.edu.cn/",
       year: "2019 - 2022",
-      description: "This program focuses on advancing renewable energy integration through cutting-edge battery energy storage technologies. It emphasizes stationary applications (microgrids, smart grids, and grid-scale storage) and mobile applications (battery electric vehicles (BEVs), plug-in hybrids (PHEVs), renewable energy vehicles (REVs), e-bikes, and consumer electronics like smartphones and laptops). I explored interdisciplinary topics such as lithium-ion/solid-state battery design, energy management systems (BMS), power electronics, and grid integration. "
+      description: "该计划的重点是通过尖端电池储能技术推进可再生能源整合。它强调固定应用（微电网、智能电网和电网级存储）和移动应用（电池电动汽车 (BEV)、插电式混合动力汽车 (PHEV)、可再生能源汽车 (REV)、电动自行车以及智能手机和笔记本电脑等消费电子产品）。我探讨了锂离子/固态电池设计、能源管理系统（BMS）、电力电子学和电网集成等跨学科课题。 "
     },
     {
-      degree: "工业工程与维护学士学位 (工学学士) ~ B.Eng. in Industrial Engineering and Maintenance",
+      degree: "工业工程与维护学士学位 (工学学士)",
       institution: "Gamal Abdel Nasser University of Conakry",
       institutionUrl: "https://uganc.edu.gn/",
       year: "2013 - 2017",
-      description: "My bachelor's degree program integrates principles of industrial engineering with advanced maintenance strategies to optimize complex systems and ensure operational reliability. It emphasizes operational efficiency (process optimization, supply chain management, and lean manufacturing) and maintenance engineering (predictive/ preventive maintenance, asset lifecycle management, and reliability-centered design). I gained expertise in industrial automation, quality control, data-driven decision-making, and sustainable resource management."
+      description: "我的学士学位课程将工业工程原理与先进的维护策略相结合，以优化复杂系统并确保运行可靠性。它强调运营效率（流程优化、供应链管理和精益生产）和维护工程（预测/预防性维护、资产生命周期管理和以可靠性为中心的设计）。我获得了工业自动化、质量控制、数据驱动决策和可持续资源管理方面的专业知识。"
     },
 
     {
-      degree: "A. 科学、技术、工程与数学(STEM)及社会科学领域水平 ~ A. Level in STEM & Social Sciences",
+      degree: "高级文凭 - 科学、技术、工程与数学(STEM)及社会科学领域水平 高级文凭",
       institution: "St. Jean Complex School",
       institutionUrl: "https://www.facebook.com/people/Groupe-Scolaire-Saint-Jean-NZ%C3%A9r%C3%A9kor%C3%A9/61567925286717/",
       year: "2011 - 2013",
-      description: " At St. Jean, STEM & Social Sciences program offers a rigorous interdisciplinary curriculum blending STEM disciplines (Mathematics, Physics, Chemistry) with social sciences and humanities (Economics, History, Literature, English) to foster analytical, critical, and creative thinking. I developped strong quantitative skills through advanced math and science coursework while exploring economic systems, historical contexts, literary analysis, and global cultures. Supplementary subjects like Philosophy, Geography, and Geology deepen critical reasoning, environmental awareness, and interdisciplinary problem-solving. The program emphasizes logical reasoning, scientific inquiry, effective communication, and ethical reflection, equipping students to excel in diverse fields such as engineering, economics, environmental science, law, or the arts."
+      description: " 在St. Jean，STEM 与社会科学课程提供严格的跨学科课程，将 STEM 学科（数学、物理、化学）与社会科学和人文学科（经济学、历史、文学、英语）相结合，培养分析、批判和创造性思维。在探索经济体系、历史背景、文学分析和全球文化的同时，我通过高级数学和科学课程的学习，培养了强大的量化技能。哲学、地理学和地质学等辅助科目加深了批判性推理、环境意识和跨学科解决问题的能力。该课程强调逻辑推理、科学探究、有效沟通和道德反思，使学生能够在工程学、经济学、环境科学、法律或艺术等不同领域取得优异成绩。"
     }
   ];
 
@@ -247,8 +247,8 @@ const Education = () => {
   return (
     <section id="education" className="section-padding bg-secondary/50">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">教育与学习 ~ Education & Learning</h2>
-        <p className="section-subtitle">终身学习与职业发展 ~ A lifetime of continuous learning and professional development</p>
+        <h2 className="section-title">教育与学习</h2>
+        <p className="section-subtitle">终身学习与职业发展</p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Formal Education */}
@@ -257,7 +257,7 @@ const Education = () => {
               <div className="p-3 rounded-full bg-primary/10">
                 <GraduationCap className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold">正式教育 Formal Education</h3>
+              <h3 className="text-2xl font-bold">正式教育</h3>
             </div>
             
                 <div className="space-y-8">
@@ -287,7 +287,7 @@ const Education = () => {
               <div className="p-3 rounded-full bg-accent/10">
                 <Award className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="text-2xl font-bold">专业认证 ~ Professional Certifications</h3>
+              <h3 className="text-2xl font-bold">专业认证</h3>
             </div>
             
             <div className="grid grid-cols-1 gap-4">
@@ -310,7 +310,7 @@ const Education = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <BookOpen className="h-6 w-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold">在线学习 Online Learning</h3>
+                <h3 className="text-2xl font-bold">在线学习</h3>
               </div>
               
               <div className="space-y-4">
@@ -329,7 +329,7 @@ const Education = () => {
                       {course.platform} · {course.institution}
                     </p>
                     <p className="text-xs text-muted-foreground mt-1">
-                      Completed: {course.completed}
+                      已完成: {course.completed}
                     </p>
                   </div>
                 ))}

@@ -23,7 +23,7 @@ const Footer = () => {
               <a href="https://github.com/Bamamou" className="hover:text-accent transition-colors" aria-label="GitHub">
                 <Github size={20} />
               </a>
-              <a href="#" className="hover:text-accent transition-colors" aria-label="Twitter">
+              <a href="https://x.com/NicolasBamamou" className="hover:text-accent transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
               <a href="https://www.youtube.com/@nicolasbamamou94" target="_blank" className="hover:text-accent transition-colors" aria-label="YouTube">
@@ -54,7 +54,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">联系信息</h4>
             <ul className="space-y-2">
-              <li>北京, CN</li>
+              <li>北京, 中国 </li>
               <li>bamamounicolas@gmail.com</li>
               <li>+86 188-107-991-28</li>
             </ul>
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
-          <p>© {currentYear} Nicolas Bamamou | Engineer Portfolio. 版权所有。</p>
+          <p>© {currentYear} Nicolas Bamamou 尼克 | 工程师作品集. 版权所有。</p>
         </div>
       </div>
       <WeChatModal 

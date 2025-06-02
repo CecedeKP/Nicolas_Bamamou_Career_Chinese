@@ -11,7 +11,7 @@ export const systemIntegration: Project = {
     '../images/System Integration/vehicle integration.jpg',
     '../images/System Integration/vehicles.jpg'
   ],
-  description: 'Integrated electrical systems for High Speed electric Motorcycles, including ECU, motor controller (MCU) and battery management system, OBC, DC-DC, and other components all connected with a sophisticated wire harness.',
+  description: '用于高速、大功率电动摩托车的集成电气系统，包括 ECU、电机控制器 (MCU) 和电池管理系统、车载充电器 OBC、DC-DC 和其他元件，所有元件均通过精密线束连接。',
   fullDescription: 'Led the integration of various electrical systems in high-performance electric motorcycles. The project encompassed the complete electrical architecture, from power train to control systems, ensuring optimal performance and reliability.',
   tags: ['MCU', 'ECU/VCU', 'OBC', 'DC-DC', 'BMS', 'HV-Battery', 'EBS/ABS', 'HV-LV Wire Harness', 'Cooling system','Integration', 'Testing'],
   icon: Globe,

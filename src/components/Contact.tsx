@@ -147,8 +147,8 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="section-title">联系我 Get In Touch</h2>
-        <p className="section-subtitle">让我们讨论您的项目或职业发展机会 ~ Let's discuss your project or career opportunities</p>
+        <h2 className="section-title">联系我</h2>
+        <p className="section-subtitle">让我们讨论您的项目或职业发展机会</p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Form */}
@@ -157,7 +157,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label htmlFor="name" className="font-medium">
-                    您的姓名/Your Name
+                    姓名
                   </label>
                   <Input
                     id="name"
@@ -171,7 +171,7 @@ const Contact = () => {
                 
                 <div className="space-y-2">
                   <label htmlFor="email" className="font-medium">
-                    您的电子邮件/Your Email
+                    电子邮件
                   </label>
                   <Input
                     id="email"
@@ -187,7 +187,7 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="subject" className="font-medium">
-                  主题/Subject
+                  主题
                 </label>
                 <Input
                   id="subject"
@@ -201,7 +201,7 @@ const Contact = () => {
               
               <div className="space-y-2">
                 <label htmlFor="message" className="font-medium">
-                  消息/Message
+                  消息
                 </label>
                 <Textarea
                   id="message"
@@ -219,7 +219,7 @@ const Contact = () => {
                 className="bg-primary hover:bg-primary/90 w-full md:w-auto"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'} <Send className="ml-2 h-4 w-4" />
+                {isSubmitting ? '发送中...' : '发送信息'} <Send className="ml-2 h-4 w-4" />
               </Button>
             </form>
           </div>
@@ -227,7 +227,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="lg:col-span-1 space-y-8">
             <div className="bg-secondary p-6 rounded-lg">
-              <h3 className="text-xl font-bold mb-6">联系方式 ~ Contact Information</h3>
+              <h3 className="text-xl font-bold mb-6">联系方式</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -245,7 +245,7 @@ const Contact = () => {
                     <Mail className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">邮箱/Email</h4>
+                    <h4 className="font-semibold">邮箱l</h4>
                     <p className="text-muted-foreground">bamamounicolas@gmail.com</p>
                   </div>
                 </div>
@@ -255,7 +255,7 @@ const Contact = () => {
                     <Phone className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">电话/Phone</h4>
+                    <h4 className="font-semibold">电话</h4>
                     <p className="text-muted-foreground">+86 (188) 107-991-28</p>
                   </div>
                 </div>
@@ -265,7 +265,7 @@ const Contact = () => {
                     <Clock className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-semibold">工作时间~Working Hours</h4>
+                    <h4 className="font-semibold">工作时间</h4>
                     <p className="text-muted-foreground">周一 ~ 周五: 早上九点 - 晚上七点</p>
                   </div>
                 </div>
@@ -274,12 +274,12 @@ const Contact = () => {
             
             <div className="bg-accent/10 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4">准备好一起合作了吗? ~ 🤝 Ready to Work Together?</h3>
-              <p className="mb-4">Let's discuss how I can contribute to your next engineering project.</p>
+              <p className="mb-4">让我们讨论一下我如何为您的下一个工程项目做出贡献吧.</p>
               <Button 
                 className="bg-accent hover:bg-accent/90 w-full"
                 onClick={() => setShowScheduleDialog(true)}
               >
-                <Calendar className="mr-2 h-4 w-4" /> Schedule a Call
+                <Calendar className="mr-2 h-4 w-4" /> 预约电话
               </Button>
             </div>
           </div>
@@ -294,17 +294,17 @@ const Contact = () => {
               <CheckCircle2 className="h-6 w-6 text-green-600" />
             </div>
             <DialogTitle className="text-center text-xl font-semibold">
-              Message Sent Successfully!
+              信息已成功发送！
             </DialogTitle>
             <DialogDescription className="text-center">
               <p className="mt-2">
-                Thank you for reaching out, {formData.name.split(' ')[0]}! 
+                感谢您伸出援手, {formData.name.split(' ')[0]}! 
               </p>
               <p className="mt-2">
-                I appreciate your interest and will get back to you as soon as possible.
+                感谢您的关注，我会尽快给您回复。
               </p>
               <p className="mt-4 text-sm text-muted-foreground">
-                You can expect a response within 24-48 hours.
+                您可以在 24-48 小时内收到回复。
               </p>
             </DialogDescription>
           </DialogHeader>
@@ -315,14 +315,14 @@ const Contact = () => {
       <Dialog open={showScheduleDialog} onOpenChange={setShowScheduleDialog}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
-            <DialogTitle>Schedule a Call</DialogTitle>
+            <DialogTitle>预约电话</DialogTitle>
             <DialogDescription>
-              Choose a date and time that works best for you.
+              请选择最适合您的日期和时间。
             </DialogDescription>
           </DialogHeader>
           <div className="space-y-4 py-4">
             <div className="space-y-2">
-              <label htmlFor="schedule-name" className="font-medium">Your Name</label>
+              <label htmlFor="schedule-name" className="font-medium">姓名</label>
               <Input
                 id="schedule-name"
                 name="name"
@@ -333,7 +333,7 @@ const Contact = () => {
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="schedule-email" className="font-medium">Your Email</label>
+              <label htmlFor="schedule-email" className="font-medium">电子邮件</label>
               <Input
                 id="schedule-email"
                 name="email"
@@ -345,7 +345,7 @@ const Contact = () => {
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="schedule-date" className="font-medium">Preferred Date</label>
+              <label htmlFor="schedule-date" className="font-medium">首选日期</label>
               <Input
                 id="schedule-date"
                 name="date"
@@ -357,7 +357,7 @@ const Contact = () => {
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="schedule-time" className="font-medium">Preferred Time</label>
+              <label htmlFor="schedule-time" className="font-medium">首选时间</label>
               <Input
                 id="schedule-time"
                 name="time"
@@ -368,7 +368,7 @@ const Contact = () => {
               />
             </div>
             <div className="space-y-2">
-              <label htmlFor="schedule-topic" className="font-medium">Discussion Topic</label>
+              <label htmlFor="schedule-topic" className="font-medium">讨论主题</label>
               <Input
                 id="schedule-topic"
                 name="topic"
@@ -384,14 +384,14 @@ const Contact = () => {
               onClick={() => setShowScheduleDialog(false)}
               variant="outline"
             >
-              Cancel
+              取消
             </Button>
             <Button
               onClick={handleScheduleSubmit}
               disabled={isSubmitting}
               className="bg-primary hover:bg-primary/90"
             >
-              {isSubmitting ? 'Scheduling...' : 'Schedule Call'}
+              {isSubmitting ? '日程安排中...' : '预约电话'}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -408,14 +408,14 @@ const Contact = () => {
               <Calendar className="h-8 w-8 text-green-600" />
             </div>
             <DialogTitle className="text-center text-xl font-semibold">
-              Call Successfully Scheduled
+              呼叫已成功安排
             </DialogTitle>
             <DialogDescription className="text-center mt-4">
               <p className="text-lg mb-4">
-                Thank you for your interest in connecting, {scheduleData.name.split(' ')[0]}!
+                感谢您有兴趣与我们联系, {scheduleData.name.split(' ')[0]}!
               </p>
               <div className="bg-secondary/50 p-4 rounded-lg mb-4">
-                <p className="font-medium">Your requested time:</p>
+                <p className="font-medium">您要求的时间:</p>
                 <p className="text-primary">
                   {scheduleData.date}
                 </p>
@@ -424,10 +424,10 @@ const Contact = () => {
                 </p>
               </div>
               <p className="text-sm text-muted-foreground mb-2">
-                I will review your request and send a calendar invitation within the next 24 hours.
+                我将在 24 小时内审核您的请求并发送日历邀请。
               </p>
               <p className="text-sm text-muted-foreground">
-                If you need to make any changes, please don't hesitate to reach out via email.
+                如果您需要做任何更改，请随时通过电子邮件联系我们。
               </p>
             </DialogDescription>
           </DialogHeader>
@@ -436,7 +436,7 @@ const Contact = () => {
               onClick={() => setShowScheduleSuccessDialog(false)}
               className="w-full bg-primary hover:bg-primary/90"
             >
-              Close
+              关闭
             </Button>
           </DialogFooter>
         </DialogContent>

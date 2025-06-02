@@ -14,7 +14,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/Nicolas_Bamamou_Career_Chinese' : '/'}>
+      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/Nicolas_Bamamou_Career' : '/'}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/project/:id" element={<ProjectDetail />} />

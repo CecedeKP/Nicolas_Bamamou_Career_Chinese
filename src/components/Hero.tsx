@@ -58,7 +58,7 @@ const Hero = () => {
                 <span>English</span>
               </a>
               <a
-                href="/fr"
+                href="https://bamamounicolas.netlify.app/"
                 className="flex items-center gap-2 px-4 py-3 hover:bg-white/20 transition-all duration-300"
               >
                 <img src="./flags/fr.svg" alt="Français" className="w-5 h-5 rounded-full" />
@@ -76,7 +76,7 @@ const Hero = () => {
         <div className="flex-1 animate-fade-in-up" style={{ animationDelay: "0.2s", opacity: 0 }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="block">你好，我是</span>
-            <span className="text-primary">Nicolas Bamamou</span>
+            <span className="text-primary">Nicolas Bamamou （尼克）</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-muted-foreground mb-6">
             工程师 | 创新者 | 创造者
