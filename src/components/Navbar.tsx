@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import CV from '@/assets/documents/Nicolas_Bamamou_CV_012025.pdf';
+import CV from '@/assets/documents/Niolas CV 012025 fr.pdf';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,7 +32,7 @@ const Navbar = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = CV;
-    link.download = 'Nicolas_Bamamou_CV_012025.pdf';
+    link.download = 'Niolas CV 012025 fr.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
