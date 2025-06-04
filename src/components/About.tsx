@@ -1,7 +1,7 @@
 import { Download, Calendar, MapPin, Mail, Linkedin, Github, Twitter, Youtube } from "lucide-react";
 import { FaWhatsapp, FaWeixin } from 'react-icons/fa';
 import { Button } from "@/components/ui/button";
-import CV from '@/assets/documents/Niolas CV 012025 fr.pdf';
+import CV from '@/assets/documents/Niolas CV 012025 zh-Hans.pdf';
 import { useState } from 'react';
 import { WeChatModal } from '@/components/ui/wechatmodal';
 
@@ -11,7 +11,7 @@ const About = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = CV;
-    link.download = 'Niolas CV 012025 fr5.pdf';
+    link.download = 'Niolas CV 012025 zh-Hans.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
