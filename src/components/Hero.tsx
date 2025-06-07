@@ -51,14 +51,14 @@ const Hero = () => {
                           bg-white/10 backdrop-blur-md border border-white/20 shadow-xl"
             >
               <a
-                href="/"
+                href="https://nicolasbammaou.netlify.app/"
                 className="flex items-center gap-2 px-4 py-3 hover:bg-white/20 transition-all duration-300"
               >
                 <img src="/flags/en.svg" alt="English" className="w-5 h-5 rounded-full" />
                 <span>English</span>
               </a>
               <a
-                href="/fr"
+                href="https://bamamounicolas.netlify.app/"
                 className="flex items-center gap-2 px-4 py-3 hover:bg-white/20 transition-all duration-300"
               >
                 <img src="/flags/fr.svg" alt="Français" className="w-5 h-5 rounded-full" />
