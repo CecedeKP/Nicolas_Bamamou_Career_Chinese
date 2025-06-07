@@ -121,11 +121,20 @@ npm run dev
 
 ## 🌐 Deployment
 
-The site is deployed using GitHub Pages. To deploy your own version:
+The site is deployed using Netlify. To deploy your own version:
 
+1. Fork this repository
+2. Connect your fork to Netlify
+3. Add your environment variables in Netlify's dashboard:
+   - `VITE_EMAILJS_SERVICE_ID`
+   - `VITE_EMAILJS_TEMPLATE_ID`
+   - `VITE_EMAILJS_PUBLIC_KEY`
+4. Netlify will automatically deploy your site on every push to the main branch
+
+For local development:
 ```bash
 npm run build
-npm run deploy
+npm run preview
 ```
 
 ## 📬 Contact
